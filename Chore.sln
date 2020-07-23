@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Chore", "Chore\Chore.jsproj", "{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|ARM.ActiveCfg = Debug|ARM
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|ARM.Build.0 = Debug|ARM
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|ARM.Deploy.0 = Debug|ARM
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|ARM64.Build.0 = Debug|ARM64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|x64.ActiveCfg = Debug|x64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|x64.Build.0 = Debug|x64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|x64.Deploy.0 = Debug|x64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|x86.ActiveCfg = Debug|x86
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|x86.Build.0 = Debug|x86
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Debug|x86.Deploy.0 = Debug|x86
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|ARM.ActiveCfg = Release|ARM
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|ARM.Build.0 = Release|ARM
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|ARM.Deploy.0 = Release|ARM
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|ARM64.ActiveCfg = Release|ARM64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|ARM64.Build.0 = Release|ARM64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|ARM64.Deploy.0 = Release|ARM64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|x64.ActiveCfg = Release|x64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|x64.Build.0 = Release|x64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|x64.Deploy.0 = Release|x64
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|x86.ActiveCfg = Release|x86
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|x86.Build.0 = Release|x86
+		{60D6FF42-88B7-42F2-9EC9-B8A4BE011544}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F028E520-DE9D-4C32-BA0A-B6E98DE96AAC}
+	EndGlobalSection
+EndGlobal
