@@ -1,15 +1,51 @@
 ﻿// Your code here!
 // Your code here!
-function createNewPerson(name) {
+
+
+    //create new object members of the house from form input
+    function createNewPerson(name) {
     const obj = {};
     obj.name = name;
     obj.age = age;
     object.email = email;
     object.phone = phone;
     obj.greeting = function () {
-        alert('Hi! I\'m ' + obj.name + '.');
+        alert('Welcome ' + obj.name + '!');
     };
     return obj;
+
+
+    //creat an array of chore objects
+    var chores = new Array("Clean Kitchen", "Clean Living Room", "Clean Kitchen", "Cat Litter", "Wash Dishes", "Laundry");
+
+
+    //create a randomizer for the array to assign
+    function shuffle(chores) {
+        var currentIndex = chores.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    };
+
+
+    
+    chores.addEventListener("click", shuffle(chores))
+
+
+
+
 
 
     //Function To Display Popup
@@ -20,15 +56,6 @@ function createNewPerson(name) {
     function div_hide() {
         document.getElementById('abc').style.display = "none";
     }
-
-    function createNewPerson(name) {
-        const obj = {};
-        obj.name = name;
-        obj.age = age;
-        object.email = email;
-        object.phone = phone;
-    };
-    return obj;
 
 
     //Regex validation

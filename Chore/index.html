@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Popup contact form</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="../default.css" rel="stylesheet">
     <script src="app.js"></script>
 </head>
 <!-- Body Starts Here -->
@@ -17,9 +17,9 @@
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" value=""><br>
                 <label for="age">Age:</label><br>
-                <input type="int" id="age" name="age" value=""><br>
+                <input type="number" id="age" name="age" value=""><br>
                 <label for="phone">Phone number:</label><br>
-                <input type="int" id=phone name="phone" value=""><br>
+                <input type="tel" id=phone name="phone" value=""><br>
                 <label for="email">Email:</label><br>
                 <input type="email" id=email name="email" value=""><br>
                 <br>
@@ -35,23 +35,6 @@
     <!-- Display Popup Button -->
     <h1>Click Button To Popup Form Using Javascript</h1>
     <button id="popup" onclick="div_show()">Popup</button>
-
-    <!--  <h2>Enter your information!</h2>
-
-    <form action="/action_page.php">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value=""><br>
-        <label for="age">Age:</label><br>
-        <input type="int" id="age" name="age" value=""><br>
-        <label for="phone">Phone number:</label><br>
-        <input type="int" id=phone name="phone" value=""><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id=email name="email" value=""><br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    <!--the form-data will be sent to a page called "/action_page.php
-    <p>Click Submit to join the household!</p> -->
 </body>
 <!-- Body Ends Here -->
 </html>
