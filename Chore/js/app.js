@@ -3,20 +3,23 @@
 
 
     //create new object members of the house from form input
-    function createNewPerson(name) {
-    const obj = {};
-    obj.name = name;
-    obj.age = age;
-    object.email = email;
-    object.phone = phone;
-    obj.greeting = function () {
+function createNewPerson(person) {
+    var person = {};
+    person.name = name;
+    person.age = age;
+    person.email = email;
+    person.phone = phone;
+    person.greeting = function () {
         alert('Welcome ' + obj.name + '!');
+        return obj;
     };
-    return obj;
+}
 
+
+//document.querySelector('.output').innerHTML = createNewPerson;
 
     //creat an array of chore objects
-    var chores = new Array("Clean Kitchen", "Clean Living Room", "Clean Kitchen", "Cat Litter", "Wash Dishes", "Laundry");
+    const chores = ['Clean Kitchen', 'Clean Living Room', 'Clean Kitchen', 'Cat Litter', 'Wash Dishes', 'Laundry'];
 
 
     //create a randomizer for the array to assign
@@ -31,31 +34,18 @@
             currentIndex -= 1;
 
             // And swap it with the current element.
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
+            temporaryValue = chores[currentIndex];
+            chores[currentIndex] = chores[randomIndex];
+            chores[randomIndex] = temporaryValue;
         }
 
-        return array;
+        return chores;
     };
 
 
     
-    chores.addEventListener("click", shuffle(chores))
+    //chores.addEventListener("click", shuffle(chores))
 
-
-
-
-
-
-    //Function To Display Popup
-    function div_show() {
-        document.getElementById('abc').style.display = "block";
-    }
-    //Function to Hide Popup
-    function div_hide() {
-        document.getElementById('abc').style.display = "none";
-    }
 
 
     //Regex validation
@@ -83,5 +73,23 @@
             alert("Not a valid Phone Number");
             return false;
         }
-    };
-}
+     };
+
+var person = {
+    person: name = 'Steve',
+    person: age = 20,
+    person: email = 'steve@test.com',
+    person: phone = 123 - 456 - 7891,
+};
+
+
+
+
+    //Function To Display Popup
+   // function div_show() {
+    //    document.getElementById('form').style.display = "block";
+    //}
+    //Function to Hide Popup
+    //function div_hide() {
+     //   document.getElementById('form').style.display = "none";
+   // }
