@@ -9,7 +9,7 @@
     <div id="abc">
         <!-- Popup Div Starts Here -->
         <div id="popupContact">
-            <!-- Contact Us Form -->
+            <!-- Form -->
             <form action="#" id="form" method="post" name="form">
                 <h2>Chore time</h2>
                 <hr>
@@ -22,7 +22,7 @@
                 <label for="email">Email:</label><br>
                 <input type="email" id=email name="email" value="" required><br>
                 <br>
-                <a href="javascript:%20check_empty()" id="submit">Send</a>
+                <button type="submit" id="submit" onclick="alert('Hi')">Send</button>
             </form>
 
             <div class="output">
@@ -31,16 +31,30 @@
         </div>
         <!-- Popup Div Ends Here -->
     </div>
+    
+    
     <!-- Display Popup Button -->
-    <h1>Click Button To Popup Form Using Javascript</h1>
-    <button id="popup" onclick="div_show(form)">Popup</button>
+    <!--<h1>Click Button To Popup Form Using Javascript</h1>
+    <button id="popup" onclick="div_show(form)">Popup</button>-->
 
+    <!--Display all chores and people-->
     <div>
         <h3>When you're ready click to get your chore</h3>
         <button id="random" onclick="shuffle(chores)">O</button>
         
-        <div> </div>
+        <!--Store and display all chores here-->
+        <div>
+            <h3>List of Chores</h3>
+            <div id="choreDisplay"></div>
+        </div>
+        
+        <!--Store and display test person and form input in the people div-->
+        <div>
+            <h3>People</h3>
+        <div id="people"> </div>
+        </div>
     </div>
+
 </body>
 <!-- Body Ends Here -->
 </html>

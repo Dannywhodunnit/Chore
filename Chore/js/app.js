@@ -9,18 +9,32 @@ function createNewPerson(person) {
     person.age = age;
     person.email = email;
     person.phone = phone;
-    person.greeting = function () {
-        alert('Welcome ' + obj.name + '!');
         return obj;
-    };
-}
+};
 
-
+//first attempt at displaying form input as a person in the "output" div
 //document.querySelector('.output').innerHTML = createNewPerson;
+
+
+//second attempt to display form input to the people div
+//document.getElementById('submit').onclick = function showNewPerson() {
+  //  document.getElementById('people').innerHTML = `Name: ${person.name}`;
+//};
+
+const nameInput = document.getElementById("name");
+const ageInput = document.getElementById("age");
+const phoneInput = document.getElementById("phone");
+const emailInput = document.getElementById("email");
+
+
+
 
     //creat an array of chore objects
     const chores = ['Clean Kitchen', 'Clean Living Room', 'Clean Kitchen', 'Cat Litter', 'Wash Dishes', 'Laundry'];
 
+    //display the chores
+    var choreList = JSON.stringify(chores);
+    //document.getElementById("choreDisplay").innerHTML = choreList;
 
     //create a randomizer for the array to assign
     function shuffle(chores) {
@@ -43,7 +57,7 @@ function createNewPerson(person) {
     };
 
 
-    
+    //Run the array randomizer on the click event
     //chores.addEventListener("click", shuffle(chores))
 
 
@@ -75,6 +89,8 @@ function createNewPerson(person) {
         }
      };
 
+
+//create a test person
 var person = {
     person: name = 'Steve',
     person: age = 20,
@@ -82,6 +98,9 @@ var person = {
     person: phone = 123 - 456 - 7891,
 };
 
+//display test person
+//var houseMembers = JSON.stringify(person);
+//document.getElementById("people").innerHTML = houseMembers;
 
 
 
