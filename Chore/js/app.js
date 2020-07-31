@@ -9,17 +9,24 @@ function createNewPerson(person) {
     person.age = age;
     person.email = email;
     person.phone = phone;
-        return obj;
 };
+
+
+//clear form after submitting
+document.getElementById("form").reset();
 
 //first attempt at displaying form input as a person in the "output" div
 //document.querySelector('.output').innerHTML = createNewPerson;
 
 
 //second attempt to display form input to the people div
-//document.getElementById('submit').onclick = function showNewPerson() {
-  //  document.getElementById('people').innerHTML = `Name: ${person.name}`;
-//};
+document.getElementById('submit').onclick = function showNewPerson() {
+    document.getElementById('people').innerHTML =
+        `Name: ${person.nameInput}`,
+        `Age: ${person.ageInput}`,
+        `Email: ${person.emailInput}`,
+        `Phone: ${person.phoneInput}`
+};
 
 const nameInput = document.getElementById("name");
 const ageInput = document.getElementById("age");
@@ -64,9 +71,9 @@ const emailInput = document.getElementById("email");
 
     //Regex validation
     //validate email
-    function ValidateEmail(inputText) {
+    function ValidateEmail(emailInput) {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (inputText.value.match(mailformat)) {
+        if (emailInput.value.match(mailformat)) {
             document.form1.text1.focus();
             return true;
         }
@@ -78,16 +85,41 @@ const emailInput = document.getElementById("email");
     };
 
     //validate phone number
-    function phonenumber(inputtxt) {
+    function phonenumber(phoneInput) {
         var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-        if (inputtxt.value.match(phoneno)) {
+        if (phoneInput.value.match(phoneno)) {
             return true;
         }
         else {
             alert("Not a valid Phone Number");
             return false;
         }
-     };
+};
+
+function showOrHideTip(show, element) {
+    // show element when show is true, hide when false
+    if (show) {
+        element.style.display = "inherit";
+    } else {
+        element.style.display = "none";
+    }
+}
+
+function createListener(validator) {
+    return e => {
+        const text = e.target.value;
+        const valid = validator(text);
+        const showTip = text !== "" && !valid;
+        const tooltip = e.target.nextElementSibling;
+        showOrHideTip(showTip, tooltip);
+    };
+}
+
+emailInput.addEventListener("input", createListener(isValidEmail));
+
+telephoneInput.addEventListener("input", createListener(isValidTelephone));
+
+
 
 
 //create a test person
@@ -99,16 +131,6 @@ var person = {
 };
 
 //display test person
-//var houseMembers = JSON.stringify(person);
-//document.getElementById("people").innerHTML = houseMembers;
+var houseMembers = JSON.stringify(person);
+print.getElementById("people").innerHTML = houseMembers;
 
-
-
-    //Function To Display Popup
-   // function div_show() {
-    //    document.getElementById('form').style.display = "block";
-    //}
-    //Function to Hide Popup
-    //function div_hide() {
-     //   document.getElementById('form').style.display = "none";
-   // }
